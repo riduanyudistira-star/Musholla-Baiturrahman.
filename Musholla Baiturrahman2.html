@@ -1,0 +1,1460 @@
+<div class="smart-mosque-header">
+    <h1>THE SMART COMPUTER OF MOSQUE</h1>
+
+    <div class="ayat-arab">
+        اِنَّ الصَّلٰوةَ كَانَتْ عَلَى الْمُؤْمِنِيْنَ كِتٰبًا مَّوْقُوْتًا
+    </div>
+
+    <div class="ayat-latin">
+        innash-shalata kanat ‘alal-mu'minina kitabam mauquta
+    </div>
+
+    <div class="ayat-arti">
+        Artinya: Sesungguhnya salat itu merupakan kewajiban yang waktunya telah ditentukan atas orang-orang mukmin
+        (Surah An-Nisa: 103)
+    </div>
+
+    <div class="motto">
+        “Cahaya ilmu bersinar di ambang kesesatan yang merajalela”
+    </div>
+
+    <div class="alamat">
+        Desa Andang, Kecamatan Haruyan, Kabupaten HST, Kalimantan Selatan
+    </div>
+</div>
+
+<style>
+.smart-mosque-header {
+    background: linear-gradient(to bottom, #0b1f1a, #145c43);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 3px solid gold;
+    font-family: Arial, sans-serif;
+}
+
+.smart-mosque-header h1 {
+    color: gold;
+    font-size: 38px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.ayat-arab {
+    font-size: 34px;
+    line-height: 2;
+    color: #fff8dc;
+    margin-bottom: 15px;
+}
+
+.ayat-latin {
+    font-size: 20px;
+    font-style: italic;
+    color: #d4ffd4;
+    margin-bottom: 15px;
+}
+
+.ayat-arti {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 25px;
+    color: #f5f5f5;
+}
+
+.motto {
+    font-size: 22px;
+    color: gold;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.alamat {
+    font-size: 18px;
+    color: #d4ffd4;
+}
+</style>
+
+<div class="welcome-musholla">
+    <h1>Ahlan Wassahlan!</h1>
+
+    <div class="welcome-text">
+        Selamat datang di laman utama Musholla Baiturrahman!
+    </div>
+
+    <div class="motto-text">
+        Musholla cahaya ilmu yang berada di tengah ambang kesesatan yang merajalela!
+    </div>
+</div>
+
+<style>
+.welcome-musholla {
+    background: linear-gradient(to bottom, #0b1f1a, #145c43);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border: 2px solid gold;
+    border-radius: 15px;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.welcome-musholla h1 {
+    color: gold;
+    font-size: 42px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.welcome-text {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    font-weight: bold;
+}
+
+.motto-text {
+    font-size: 20px;
+    color: #ffd700;
+    font-style: italic;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+}
+</style>
+
+
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Komputer Pintar Musholla Baiturrahman</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #0b1f1a;
+        color: white;
+; /* Cocok untuk tampilan monitor/TV display */
+    }
+
+    .header {
+        background: linear-gradient(to bottom, #0f3d2e, #08261d);
+        padding: 15px;
+        text-align: center;
+        border-bottom: 3px solid gold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 50px;
+    }
+
+    .header-text h1 { margin: 0; font-size: 28px; color: gold; }
+    
+    #live-clock {
+        font-size: 45px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 0 0 10px rgba(255,215,0,0.5);
+    }
+
+    .container {
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+        height: 70vh;
+    }
+
+    .left, .right {
+        background: rgba(255,255,255,0.05);
+        border-radius: 15px;
+        padding: 20px;
+        border: 1px solid rgba(212, 255, 212, 0.1);
+    }
+
+    .left { flex: 2; }
+    .right { flex: 1; }
+
+    h3 {
+        color: gold;
+        border-bottom: 1px solid gold;
+        padding-bottom: 10px;
+        margin-top: 0;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 24px;
+    }
+
+    table th, table td {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    table th { background: #145c43; color: gold; }
+
+    /* Efek highlight untuk waktu aktif */
+    .active-row {
+        background: rgba(255, 215, 0, 0.2) !important;
+        color: gold;
+        font-weight: bold;
+        border: 2px solid gold;
+    }
+
+    .next-prayer-box {
+        background: #b8860b;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .next-prayer-box h4 { margin: 0; font-size: 18px; }
+    #countdown { font-size: 32px; font-weight: bold; }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #0f3d2e;
+        padding: 10px 0;
+        border-top: 2px solid gold;
+        overflow: hidden;
+    }
+
+    .marquee {
+        display: inline-block;
+        white-space: nowrap;
+        animation: marquee 25s linear infinite;
+        font-size: 20px;
+    }
+
+    @keyframes marquee {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-text">
+        <h1>MUSHOLLA BAITURRAHMAN</h1>
+        <div id="current-date" style="color: #d4ffd4;"></div>
+    </div>
+    <div id="live-clock">00:00:00</div>
+</div>
+
+<div class="container">
+    <div class="left">
+        <h3>Jadwal Shalat</h3>
+        <table id="prayer-table">
+            <tr id="row-subuh"><td>Subuh</td><td class="time">05:00</td></tr>
+            <tr id="row-dzuhur"><td>Zuhur</td><td class="time">12:19</td></tr>
+            <tr id="row-ashar"><td>Asar</td><td class="time">15:40</td></tr>
+            <tr id="row-maghrib"><td>Maghrib</td><td class="time">18:23</td></tr>
+            <tr id="row-isya"><td>Isya</td><td class="time">19:30</td></tr>
+        </table>
+    </div>
+
+    <div class="right">
+        <div class="next-prayer-box">
+            <h4 id="next-label">Menuju Maghrib</h4>
+            <div id="countdown">00:00:00</div>
+        </div>
+        
+        <h3>Murotal Hari Ini</h3>
+        <p><b>Subuh:</b> Al-Waqiah</p>
+        <p><b>Dzuhur:</b> yasin
+          </p>
+        <p><b>Ashar:</b> As-Sajdah</p>
+        <p><b>Maghrib:</b> Al-Mulk</p>
+    </div>
+</div>
+
+<
+    </div>
+</div>
+
+<script>
+    function updateClock() {
+        const now = new Date();
+        
+        // Update Jam
+        const h = String(now.getHours()).padStart(2, '0');
+        const m = String(now.getMinutes()).padStart(2, '0');
+        const s = String(now.getSeconds()).padStart(2, '0');
+        document.getElementById('live-clock').innerText = `${h}:${m}:${s}`;
+
+        // Update Tanggal
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('current-date').innerText = now.toLocaleDateString('id-ID', options);
+
+        checkNextPrayer(now);
+    }
+
+    function checkNextPrayer(now) {
+        const prayers = [
+            { name: 'Subuh', time: '05:00' },
+            { name: 'Zuhur', time: '12:19' },
+            { name: 'Asar', time: '15:40' },
+            { name: 'Maghrib', time: '18:23' },
+            { name: 'Isya', time: '19:30' }
+        ];
+
+        let nextPrayer = null;
+        let currentTime = now.getHours() * 60 + now.getMinutes();
+
+        // Hapus semua highlight
+        document.querySelectorAll('tr').forEach(tr => tr.classList.remove('active-row'));
+
+        for (let i = 0; i < prayers.length; i++) {
+            let pTime = prayers[i].time.split(':');
+            let pMinutes = parseInt(pTime[0]) * 60 + parseInt(pTime[1]);
+
+            if (pMinutes > currentTime) {
+                nextPrayer = prayers[i];
+                break;
+            }
+        }
+
+        // Jika sudah lewat Isya, target berikutnya adalah Subuh besok
+        if (!nextPrayer) nextPrayer = prayers[0];
+
+        // Hitung Selisih
+        document.getElementById('next-label').innerText = `Menuju ${nextPrayer.name}`;
+        
+        // Logika highlight baris (sederhana: highlight yang akan datang)
+        const rowId = `row-${nextPrayer.name.toLowerCase()}`;
+        document.getElementById(rowId).classList.add('active-row');
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+</script>
+
+</body>
+</html>
+
+<div class="pedoman-shalat">
+    <h2>PEDOMAN SHALAT</h2>
+
+    <div class="pedoman-item">
+        <strong>Imsak Subuh:</strong> -10 Menit
+    </div>
+
+    <div class="pedoman-item">
+        <strong>Subuh:</strong> 20° (Patokan Fajar Kemenag RI)
+    </div>
+
+    <div class="pedoman-item">
+        <strong>Zawal Dzuhur:</strong> +1 Menit
+    </div>
+
+    <div class="pedoman-item">
+        <strong>Mazhab Ashar:</strong> Mazhab Syafi'i
+    </div>
+
+    <div class="pedoman-item">
+        <strong>Sunset Maghrib:</strong> +1 Menit
+    </div>
+
+    <div class="pedoman-item">
+        <strong>Isya:</strong> 18° (Patokan Isya Kemenag RI)
+    </div>
+
+    <div class="pedoman-item">
+        <strong>Ihtiati:</strong> +2 Menit
+    </div>
+</div>
+
+<style>
+.pedoman-shalat {
+    background: #0f3d2e;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid gold;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+.pedoman-shalat h2 {
+    text-align: center;
+    color: gold;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.pedoman-item {
+    background: rgba(255,255,255,0.05);
+    padding: 12px;
+    margin-bottom: 10px;
+    border-left: 4px solid gold;
+    border-radius: 8px;
+    font-size: 18px;
+}
+</style>
+
+<div class="zakat-calculator">
+    <h2>KALKULATOR & HITUNG ZAKAT</h2>
+
+    <div class="zakat-box">
+        <label><strong>Pilih Jenis Zakat:</strong></label>
+        <select id="jenisZakat" onchange="tampilZakat()">
+            <option value="">-- Pilih Jenis Zakat --</option>
+            <option value="pertanian">Zakat Pertanian</option>
+            <option value="peternakan">Zakat Peternakan</option>
+        </select>
+    </div>
+
+    <!-- Zakat Pertanian -->
+    <div id="pertanianBox" class="hidden">
+        <h3>Zakat Pertanian</h3>
+
+        <label>Hasil Panen (Kg):</label>
+        <input type="number" id="hasilPanen" placeholder="Masukkan jumlah panen" oninput="hitungZakatPertanian()">
+
+        <div id="statusZakat" class="hasil-box"></div>
+
+        <label>Sumber Air:</label>
+        <select id="sumberAir" onchange="hitungZakatPertanian()">
+            <option value="10">Air Hujan (10%)</option>
+            <option value="5">Menggunakan Biaya / Irigasi (5%)</option>
+        </select>
+
+        <div id="hasilZakat" class="hasil-box"></div>
+    </div>
+
+    <!-- Zakat Peternakan -->
+    <div id="peternakanBox" class="hidden">
+        <h3>Zakat Peternakan</h3>
+
+        <div class="peternakan-info">
+            <h4>Kambing / Domba</h4>
+            <p>
+            40 - 120 ekor: 1 ekor kambing/domba<br>
+            121 - 200 ekor: 2 ekor kambing/domba<br>
+            201 - 300 ekor: 3 ekor kambing/domba<br>
+            301 - 399 ekor: 4 ekor kambing/domba<br>
+            400+ ekor: setiap tambahan 100 ekor tambah 1 ekor
+            </p>
+
+            <h4>Sapi</h4>
+            <p>
+            30 - 39 ekor: 1 tabi'<br>
+            40 - 59 ekor: 1 musinnah<br>
+            60 - 69 ekor: 2 tabi'<br>
+            70 - 79 ekor: 1 musinnah + 1 tabi'<br>
+            80 - 89 ekor: 2 musinnah<br>
+            90 - 99 ekor: 3 tabi'<br>
+            100 - 109 ekor: 2 tabi' + 1 musinnah
+            </p>
+
+            <h4>Unta</h4>
+            <p>
+            20 - 24 ekor: 4 kambing/domba<br>
+            25 - 35 ekor: 1 Bintu Makhad<br>
+            36 - 45 ekor: 1 Bintu Labun<br>
+            46 - 60 ekor: 1 Hiqqah<br>
+            61 - 75 ekor: 1 Jadza'ah<br>
+            76 - 90 ekor: 2 Bintu Labun<br>
+            91 - 120 ekor: 2 Hiqqah<br>
+            > 120 ekor: kelipatan 40 = 1 Bintu Labun, kelipatan 50 = 1 Hiqqah
+            </p>
+        </div>
+    </div>
+</div>
+
+<style>
+body {
+    font-family: Arial;
+    background: #0b1f1a;
+    color: white;
+}
+
+.zakat-calculator {
+    background: #0f3d2e;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid gold;
+}
+
+h2, h3, h4 {
+    color: gold;
+}
+
+select, input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+}
+
+.hasil-box {
+    background: rgba(255,255,255,0.08);
+    padding: 15px;
+    border-left: 4px solid gold;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.hidden {
+    display: none;
+}
+</style>
+
+<script>
+function tampilZakat() {
+    let jenis = document.getElementById("jenisZakat").value;
+
+    document.getElementById("pertanianBox").style.display = "none";
+    document.getElementById("peternakanBox").style.display = "none";
+
+    if (jenis === "pertanian") {
+        document.getElementById("pertanianBox").style.display = "block";
+    }
+
+    if (jenis === "peternakan") {
+        document.getElementById("peternakanBox").style.display = "block";
+    }
+}
+
+function hitungZakatPertanian() {
+    let panen = parseFloat(document.getElementById("hasilPanen").value);
+    let persen = parseFloat(document.getElementById("sumberAir").value);
+
+    if (!panen) return;
+
+    if (panen < 653) {
+        document.getElementById("statusZakat").innerHTML =
+            "TIDAK WAJIB ZAKAT (BELUM MENCAPAI NISAB)";
+        document.getElementById("hasilZakat").innerHTML = "";
+    } else {
+        let zakat = (panen * persen) / 100;
+
+        document.getElementById("statusZakat").innerHTML =
+            "WAJIB ZAKAT";
+
+        document.getElementById("hasilZakat").innerHTML =
+            "Jumlah Zakat: <strong>" + zakat.toFixed(2) + " Kg</strong>";
+    }
+}
+</script>
+
+<div class="fitur-selamatan">
+    <h2>KALKULATOR SELAMATAN</h2>
+    <h3>Perhitungan Hari Tahlil & Selamatan</h3>
+
+    <div class="selamatan-box">
+
+        <label><strong>Masukkan Tanggal Meninggal:</strong></label>
+
+        <select id="tanggal">
+            <option value="">Tanggal</option>
+        </select>
+
+        <select id="bulan">
+            <option value="">Bulan</option>
+            <option value="0">Januari</option>
+            <option value="1">Februari</option>
+            <option value="2">Maret</option>
+            <option value="3">April</option>
+            <option value="4">Mei</option>
+            <option value="5">Juni</option>
+            <option value="6">Juli</option>
+            <option value="7">Agustus</option>
+            <option value="8">September</option>
+            <option value="9">Oktober</option>
+            <option value="10">November</option>
+            <option value="11">Desember</option>
+        </select>
+
+        <select id="tahun">
+            <option value="">Tahun</option>
+        </select>
+
+        <button onclick="hitungSelamatan()">Hitung Selamatan</button>
+
+        <div id="hasilSelamatan" class="hasil-box"></div>
+
+    </div>
+</div>
+
+<style>
+.fitur-selamatan {
+    background: #0f3d2e;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid gold;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.fitur-selamatan h2 {
+    text-align: center;
+    color: gold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.fitur-selamatan h3 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 25px;
+}
+
+.selamatan-box {
+    background: rgba(255,255,255,0.06);
+    padding: 25px;
+    border-left: 4px solid gold;
+    border-radius: 10px;
+}
+
+select, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+button {
+    background: gold;
+    color: #0b1f1a;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hasil-box {
+    margin-top: 20px;
+    background: rgba(255,255,255,0.08);
+    padding: 18px;
+    border-left: 4px solid gold;
+    border-radius: 8px;
+    line-height: 1.8;
+}
+</style>
+
+<script>
+for (let i = 1; i <= 31; i++) {
+    document.getElementById("tanggal").innerHTML +=
+        `<option value="${i}">${i}</option>`;
+}
+
+for (let y = 1945; y <= 2100; y++) {
+    document.getElementById("tahun").innerHTML +=
+        `<option value="${y}">${y}</option>`;
+}
+
+function formatTanggal(date) {
+    const hariList = [
+        "Minggu","Senin","Selasa","Rabu",
+        "Kamis","Jumat","Sabtu"
+    ];
+
+    const bulanList = [
+        "Januari","Februari","Maret","April",
+        "Mei","Juni","Juli","Agustus",
+        "September","Oktober","November","Desember"
+    ];
+
+    return `${hariList[date.getDay()]}, ${date.getDate()} ${bulanList[date.getMonth()]} ${date.getFullYear()}`;
+}
+
+function tambahHari(tanggalAwal, jumlahHari) {
+    let hasil = new Date(tanggalAwal);
+    hasil.setDate(hasil.getDate() + jumlahHari);
+    return hasil;
+}
+
+function hitungSelamatan() {
+    let tgl = document.getElementById("tanggal").value;
+    let bln = document.getElementById("bulan").value;
+    let thn = document.getElementById("tahun").value;
+
+    if (!tgl || bln === "" || !thn) {
+        document.getElementById("hasilSelamatan").innerHTML =
+            "Silakan lengkapi tanggal meninggal terlebih dahulu.";
+        return;
+    }
+
+    let tanggalMeninggal = new Date(thn, bln, tgl);
+
+    let hasil = `
+        <strong>Hari Meninggal:</strong><br>
+        ${formatTanggal(tanggalMeninggal)}<br><br>
+
+        <strong>Selamatan 3 Hari:</strong><br>
+        ${formatTanggal(tambahHari(tanggalMeninggal, 3))}<br><br>
+
+        <strong>Selamatan 7 Hari:</strong><br>
+        ${formatTanggal(tambahHari(tanggalMeninggal, 7))}<br><br>
+
+        <strong>Selamatan 40 Hari:</strong><br>
+        ${formatTanggal(tambahHari(tanggalMeninggal, 40))}<br><br>
+
+        <strong>Selamatan 100 Hari:</strong><br>
+        ${formatTanggal(tambahHari(tanggalMeninggal, 100))}<br><br>
+
+        <strong>Selamatan Pendak I (354 Hari):</strong><br>
+        ${formatTanggal(tambahHari(tanggalMeninggal, 354))}<br><br>
+
+        <strong>Selamatan Pendak II (708 Hari):</strong><br>
+        ${formatTanggal(tambahHari(tanggalMeninggal, 708))}<br><br>
+
+        <strong>Selamatan 1000 Hari:</strong><br>
+        ${formatTanggal(tambahHari(tanggalMeninggal, 1000))}
+    `;
+
+    document.getElementById("hasilSelamatan").innerHTML = hasil;
+}
+</script>
+
+<div class="fitur-kalkulator">
+    <h2>KALKULATOR</h2>
+    <h3>Kalkulator Hitung Biasa</h3>
+
+    <div class="kalkulator-box">
+        <input type="text" id="layar" readonly>
+
+        <div class="tombol-grid">
+            <button onclick="hapusSemua()">C</button>
+            <button onclick="hapusSatu()">⌫</button>
+            <button onclick="tambahNilai('%')">%</button>
+            <button onclick="tambahNilai('/')">÷</button>
+
+            <button onclick="tambahNilai('7')">7</button>
+            <button onclick="tambahNilai('8')">8</button>
+            <button onclick="tambahNilai('9')">9</button>
+            <button onclick="tambahNilai('*')">×</button>
+
+            <button onclick="tambahNilai('4')">4</button>
+            <button onclick="tambahNilai('5')">5</button>
+            <button onclick="tambahNilai('6')">6</button>
+            <button onclick="tambahNilai('-')">−</button>
+
+            <button onclick="tambahNilai('1')">1</button>
+            <button onclick="tambahNilai('2')">2</button>
+            <button onclick="tambahNilai('3')">3</button>
+            <button onclick="tambahNilai('+')">+</button>
+
+            <button onclick="tambahNilai('0')">0</button>
+            <button onclick="tambahNilai('.')">.</button>
+            <button onclick="hitungHasil()" class="equals">=</button>
+        </div>
+    </div>
+</div>
+
+<style>
+.fitur-kalkulator {
+    background: #0f3d2e;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid gold;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.fitur-kalkulator h2 {
+    text-align: center;
+    color: gold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.fitur-kalkulator h3 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 25px;
+}
+
+.kalkulator-box {
+    background: rgba(255,255,255,0.06);
+    padding: 25px;
+    border-left: 4px solid gold;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+#layar {
+    width: 100%;
+    height: 60px;
+    font-size: 28px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    color: #000;
+}
+
+.tombol-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    padding: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: gold;
+    color: #0b1f1a;
+}
+
+.equals {
+    grid-column: span 2;
+}
+</style>
+
+<script>
+function tambahNilai(nilai) {
+    document.getElementById("layar").value += nilai;
+}
+
+function hapusSemua() {
+    document.getElementById("layar").value = "";
+}
+
+function hapusSatu() {
+    let layar = document.getElementById("layar");
+    layar.value = layar.value.slice(0, -1);
+}
+
+function hitungHasil() {
+    let layar = document.getElementById("layar");
+
+    try {
+        layar.value = eval(layar.value);
+    } catch {
+        layar.value = "Error";
+    }
+}
+</script>
+
+<div class="fitur-sifat-allah">
+    <h2>20 SIFAT WAJIB ALLAH</h2>
+    <h3>Aqidah Ahlus Sunnah wal Jama'ah</h3>
+
+    <div class="sifat-box">
+
+        <ol>
+            <li><strong>Wujud</strong> — Ada</li>
+            <li><strong>Qidam</strong> — Terdahulu / Awal tanpa permulaan</li>
+            <li><strong>Baqa</strong> — Kekal / Tidak berakhir</li>
+            <li><strong>Mukhalafatu lil Hawadits</strong> — Berbeda dengan makhluk</li>
+            <li><strong>Qiyamuhu binafsihi</strong> — Berdiri sendiri</li>
+            <li><strong>Wahdaniyah</strong> — Esa / Tunggal</li>
+            <li><strong>Qudrah</strong> — Berkuasa</li>
+            <li><strong>Iradah</strong> — Berkehendak</li>
+            <li><strong>Ilmu</strong> — Mengetahui</li>
+            <li><strong>Hayat</strong> — Hidup</li>
+            <li><strong>Sama'</strong> — Mendengar</li>
+            <li><strong>Basar</strong> — Melihat</li>
+            <li><strong>Kalam</strong> — Berfirman</li>
+            <li><strong>Qadiran</strong> — Yang Maha Berkuasa</li>
+            <li><strong>Muridan</strong> — Yang Maha Berkehendak</li>
+            <li><strong>'Aliman</strong> — Yang Maha Mengetahui</li>
+            <li><strong>Hayyan</strong> — Yang Maha Hidup</li>
+            <li><strong>Sami'an</strong> — Yang Maha Mendengar</li>
+            <li><strong>Basiran</strong> — Yang Maha Melihat</li>
+            <li><strong>Mutakalliman</strong> — Yang Maha Berfirman</li>
+        </ol>
+
+        <div class="dalil-box">
+            <h4>Dalil Aqidah</h4>
+            <p>
+                لَيْسَ كَمِثْلِهِ شَيْءٌ ۖ وَهُوَ السَّمِيعُ الْبَصِيرُ
+            </p>
+            <p>
+                “Tidak ada sesuatu pun yang serupa dengan-Nya,
+                dan Dia Maha Mendengar lagi Maha Melihat.”
+                (QS. Asy-Syura: 11)
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<style>
+.fitur-sifat-allah {
+    background: #0f3d2e;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid gold;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.fitur-sifat-allah h2 {
+    text-align: center;
+    color: gold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.fitur-sifat-allah h3 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 25px;
+}
+
+.sifat-box {
+    background: rgba(255,255,255,0.06);
+    padding: 25px;
+    border-left: 4px solid gold;
+    border-radius: 10px;
+}
+
+.sifat-box ol {
+    padding-left: 25px;
+    line-height: 1.9;
+}
+
+.sifat-box li {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.dalil-box {
+    margin-top: 30px;
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid gold;
+}
+
+.dalil-box h4 {
+    color: gold;
+    margin-bottom: 15px;
+}
+
+.dalil-box p {
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+</style>
+
+<div class="fitur-kiblat">
+    <h2>KOMPAS ARAH KIBLAT</h2>
+
+    <div class="kiblat-box">
+        <h3>Arah Kiblat Musholla</h3>
+        <p>
+            Gunakan kompas digital untuk mengetahui arah kiblat secara tepat
+            menuju Ka'bah di Makkah Al-Mukarramah.
+        </p>
+
+        <div class="arah-kiblat">
+            🧭 <span id="derajatKiblat">294° Barat Laut</span>
+        </div>
+
+        <p class="keterangan">
+            Patokan arah kiblat untuk Kalimantan Selatan umumnya mengarah
+            ke Barat Laut (± 294° dari Utara).
+        </p>
+
+        <button onclick="cekKiblat()">Cek Arah Kiblat</button>
+
+        <div id="hasilKiblat" class="hasil-kiblat"></div>
+    </div>
+</div>
+
+<style>
+.fitur-kiblat {
+    background: #0f3d2e;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid gold;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.fitur-kiblat h2 {
+    text-align: center;
+    color: gold;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.kiblat-box {
+    background: rgba(255,255,255,0.06);
+    padding: 20px;
+    border-left: 4px solid gold;
+    border-radius: 10px;
+}
+
+.kiblat-box h3 {
+    color: gold;
+    margin-bottom: 15px;
+}
+
+.arah-kiblat {
+    font-size: 28px;
+    text-align: center;
+    margin: 25px 0;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.keterangan {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+button {
+    background: gold;
+    color: #0b1f1a;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hasil-kiblat {
+    margin-top: 20px;
+    background: rgba(255,255,255,0.08);
+    padding: 15px;
+    border-left: 4px solid gold;
+    border-radius: 8px;
+}
+</style>
+
+<script>
+function cekKiblat() {
+    document.getElementById("hasilKiblat").innerHTML =
+        "Arah kiblat mengarah ke <strong>294° Barat Laut</strong> menuju Ka'bah di Makkah.";
+}
+
+</script>
+
+<div class="fitur-tasbih">
+    <h2>TASBIH DIGITAL</h2>
+
+    <div class="tasbih-box">
+        <h3>Dzikir Harian</h3>
+        <p>
+            Setiap satu sentuhan tombol = 1 dzikir
+        </p>
+
+        <div class="counter" id="counter">0</div>
+
+        <button class="btn-dzikir" onclick="tambahDzikir()">
+            +1 DZIKIR
+        </button>
+
+        <button class="btn-reset" onclick="resetDzikir()">
+            RESET
+        </button>
+
+        <div class="info-dzikir">
+            Target Umum:
+            Subhanallah (33),
+            Alhamdulillah (33),
+            Allahu Akbar (34)
+        </div>
+    </div>
+</div>
+
+<style>
+.fitur-tasbih {
+    background: #0f3d2e;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid gold;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.fitur-tasbih h2 {
+    text-align: center;
+    color: gold;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.tasbih-box {
+    background: rgba(255,255,255,0.06);
+    padding: 25px;
+    border-left: 4px solid gold;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.tasbih-box h3 {
+    color: gold;
+    margin-bottom: 15px;
+}
+
+.counter {
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffd700;
+    margin: 25px 0;
+}
+
+.btn-dzikir {
+    background: gold;
+    color: #0b1f1a;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.btn-reset {
+    background: #ffffff;
+    color: #0b1f1a;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.info-dzikir {
+    margin-top: 25px;
+    line-height: 1.8;
+    font-size: 16px;
+}
+</style>
+
+<script>
+let jumlahDzikir = 0;
+
+function tambahDzikir() {
+    jumlahDzikir++;
+    document.getElementById("counter").innerText = jumlahDzikir;
+}
+
+function resetDzikir() {
+    jumlahDzikir = 0;
+    document.getElementById("counter").innerText = jumlahDzikir;
+}
+ <script> 
+ 
+ </script>
+
+
+<div class="fitur-kalender">
+    <h2>KALENDER LENGKAP</h2>
+    <h3>Kalender Masehi + Hijriyah (Pedoman Nahdlatul Ulama)</h3>
+
+    <div class="kalender-box">
+
+        <div class="tanggal-hari">
+            <div class="hari" id="hariSekarang">Senin</div>
+            <div class="tanggal" id="tanggalMasehi">01 Januari 2026</div>
+            <div class="tanggal-hijriyah" id="tanggalHijriyah">
+                10 Rajab 1447 H
+            </div>
+        </div>
+
+        <div class="info-kalender">
+            <p><strong>Kalender Masehi:</strong> Sistem Gregorian</p>
+            <p><strong>Kalender Hijriyah:</strong> Mengikuti rukyatul hilal & hisab NU</p>
+            <p><strong>Pedoman:</strong> Nahdlatul Ulama (NU)</p>
+        </div>
+
+        <div class="bulan-islam">
+            <h4>12 Bulan Hijriyah</h4>
+            <ul>
+                <li>1. Muharram</li>
+                <li>2. Safar</li>
+                <li>3. Rabiul Awal</li>
+                <li>4. Rabiul Akhir</li>
+                <li>5. Jumadil Awal</li>
+                <li>6. Jumadil Akhir</li>
+                <li>7. Rajab</li>
+                <li>8. Sya’ban</li>
+                <li>9. Ramadhan</li>
+                <li>10. Syawwal</li>
+                <li>11. Dzulqa’dah</li>
+                <li>12. Dzulhijjah</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<style>
+.fitur-kalender {
+    background: #0f3d2e;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid gold;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.fitur-kalender h2 {
+    text-align: center;
+    color: gold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.fitur-kalender h3 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 25px;
+}
+
+.kalender-box {
+    background: rgba(255,255,255,0.06);
+    padding: 25px;
+    border-left: 4px solid gold;
+    border-radius: 10px;
+}
+
+.tanggal-hari {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.hari {
+    font-size: 32px;
+    font-weight: bold;
+    color: gold;
+}
+
+.tanggal {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.tanggal-hijriyah {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #d4ffd4;
+}
+
+.info-kalender {
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+.bulan-islam {
+    margin-top: 30px;
+}
+
+.bulan-islam h4 {
+    color: gold;
+    margin-bottom: 15px;
+}
+
+.bulan-islam ul {
+    padding-left: 20px;
+}
+
+.bulan-islam li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+</style>
+
+<script>
+function updateKalender() {
+    const hariList = [
+        "Minggu", "Senin", "Selasa",
+        "Rabu", "Kamis", "Jumat", "Sabtu"
+    ];
+
+    const bulanList = [
+        "Januari", "Februari", "Maret", "April",
+        "Mei", "Juni", "Juli", "Agustus",
+        "September", "Oktober", "November", "Desember"
+    ];
+
+    const today = new Date();
+
+    let hari = hariList[today.getDay()];
+    let tanggal = today.getDate();
+    let bulan = bulanList[today.getMonth()];
+    let tahun = today.getFullYear();
+
+    document.getElementById("hariSekarang").innerText = hari;
+    document.getElementById("tanggalMasehi").innerText =
+        tanggal + " " + bulan + " " + tahun;
+
+    // Hijriyah sederhana (placeholder manual)
+    document.getElementById("tanggalHijriyah").innerText =
+        "Mengikuti Kalender Hijriyah NU";
+}
+
+updateKalender();
+</script>
+
+<div class="running-text-container">
+
+    <div id="runningText" class="marquee">
+        <span id="marqueeContent>
+            Musholla Baiturrahman Desa Andang Kecamatan Haruyan Kabupaten HST, Kalimantan Selatan |
+            Luruskan, rapatkan barisan shalat anda |
+            Sesungguhnya shalat itu adalah kewajiban yang ditentukan oleh Allah kepada orang-orang beriman |
+            Sengaja aku i'tikaf di musholla ini semata-mata karena Allah Ta'ala |
+            Imsak: 04:50 WITA |
+            Shubuh: 05:00 WITA |
+            Terbit: 06:17 WITA |
+            Dhuha: 06:37 WITA |
+            Dzuhur: 12:19 WITA |
+            Ashar: 15:40 WITA |
+            Maghrib: 18:23 WITA |
+            Isya: 19:30 WITA
+        </span>
+    </div>
+
+    <div id="specialMessage" class="special-message" style="display:none;">
+        PESAN KHUSUS
+    </div>
+
+</div>
+
+<style>
+.running-text-container {
+    width: 100%;
+    background: #0b1f1a;
+    border-top: 2px solid gold;
+    border-bottom: 2px solid gold;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+}
+
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 15px 0;
+    background: #145c43;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: jalan 45s linear infinite;
+}
+
+@keyframes jalan {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.special-message {
+    text-align: center;
+    background: #8b0000;
+    color: gold;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 18px;
+}
+</style>
+
+<script>
+const jadwalShalat = [
+    { nama: "SHUBUH", jam: 5, menit: 0 },
+    { nama: "DZUHUR", jam: 12, menit: 19 },
+    { nama: "ASHAR", jam: 15, menit: 40 },
+    { nama: "MAGHRIB", jam: 18, menit: 23 },
+    { nama: "ISYA", jam: 19, menit: 30 }
+];
+
+function cekRunningText() {
+    const now = new Date();
+    const jam = now.getHours();
+    const menit = now.getMinutes();
+
+    const runningText = document.getElementById("runningText");
+    const specialMessage = document.getElementById("specialMessage");
+
+    let statusKhusus = false;
+
+    jadwalShalat.forEach(shalat => {
+        let totalSekarang = jam * 60 + menit;
+        let totalShalat = shalat.jam * 60 + shalat.menit;
+
+        // 10 menit sebelum adzan sampai 7 menit sebelum adzan
+        if (
+            totalSekarang >= totalShalat - 10 &&
+            totalSekarang < totalShalat - 7
+        ) {
+            runningText.style.display = "none";
+            specialMessage.style.display = "block";
+            specialMessage.innerHTML =
+                "10 MENIT MENUJU " + shalat.nama;
+            statusKhusus = true;
+        }
+
+        // Saat masuk waktu adzan sampai 1 menit
+        else if (
+            totalSekarang >= totalShalat &&
+            totalSekarang < totalShalat + 1
+        ) {
+            runningText.style.display = "none";
+            specialMessage.style.display = "block";
+            specialMessage.innerHTML =
+                "WAKTU ADZAN " + shalat.nama;
+            statusKhusus = true;
+        }
+
+        // Setelah adzan sampai 5 menit berikutnya → mati total
+        else if (
+            totalSekarang >= totalShalat + 1 &&
+            totalSekarang < totalShalat + 6
+        ) {
+            runningText.style.display = "none";
+            specialMessage.style.display = "none";
+            statusKhusus = true;
+        }
+    });
+
+    if (!statusKhusus) {
+        runningText.style.display = "block";
+        specialMessage.style.display = "none";
+    }
+}
+
+setInterval(cekRunningText, 1000);
+cekRunningText();
+</script>
